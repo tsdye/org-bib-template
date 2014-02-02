@@ -17,8 +17,13 @@
 ** Introduction
 This file describes a template for creating an annotated bibliography
 document using Org mode. The document is intended to be output as a
-pdf file and distributed as printed hard copy.  An example of its use
-can be found at https://github.com/tsdye/org-bib-template.git.
+pdf file and distributed as printed hard copy.  
+
+The template is distributed as =annotate-biblio-template.org= at
+https://github.com/tsdye/org-bib-template.git. 
+ 
+An example of its use can be found in the files =14c-workshop.org= and
+=local.bib=, also at https://github.com/tsdye/org-bib-template.git.
 
 The goal was to design a template that makes an annotated bibiliography
   - easy to build,
@@ -377,14 +382,12 @@ LaTeX citations.
 
 #+name: local-vars-eg
 #+begin_example
-,# Local Variables: 
-,# eval: (and (fboundp 'org-sbe) (not (fboundp 'sbe)) (fset 'sbe 'org-sbe))
-,# eval: (org-sbe "koma-article-times")
-,# eval: (org-sbe "user-entities")
-,# eval: (org-sbe "set-pdf-process-bibtex")
-,# eval: (org-sbe "ebib-setup")
-,# eval: (org-sbe "define-biblatex-cite-link")
-,# End:
+# eval: (and (fboundp 'org-sbe) (not (fboundp 'sbe)) (fset 'sbe 'org-sbe))
+# eval: (sbe "koma-article-times")
+# eval: (sbe "user-entities")
+# eval: (sbe "set-pdf-process-bibtex")
+# eval: (sbe "ebib-setup")
+# eval: (sbe "define-biblatex-cite-link")
 #+end_example
 
 * Local variables                                                  :noexport:
@@ -410,9 +413,9 @@ LaTeX citations.
 
 # Local Variables: 
 # eval: (and (fboundp 'org-sbe) (not (fboundp 'sbe)) (fset 'sbe 'org-sbe))
-# eval: (org-sbe "koma-article-times")
-# eval: (org-sbe "user-entities")
-# eval: (org-sbe "set-pdf-process-bibtex")
-# eval: (org-sbe "ebib-setup")
-# eval: (org-sbe "define-biblatex-cite-link")
+# eval: (sbe "koma-article-times")
+# eval: (sbe "user-entities")
+# eval: (sbe "set-pdf-process-bibtex")
+# eval: (sbe "ebib-setup")
+# eval: (sbe "define-biblatex-cite-link")
 # End:
