@@ -633,7 +633,8 @@ do more work on the enclosure, all in her lifetime."
 ** Introduction
 This file describes a template for creating an annotated bibliography
 document using Org mode. The document is intended to be output as a
-pdf file and distributed as printed hard copy.
+pdf file and distributed as printed hard copy.  An example of its use
+can be found at https://github.com/tsdye/org-bib-template.git.
 
 The goal was to design a template that makes an annotated bibiliography
   - easy to build,
@@ -765,7 +766,7 @@ database that holds entries for the works that appear in the annotated
 bibliography. 
 
 The last line, which starts up Org mode with =entitiespretty= is just
-a person preference for the look of the buffer.
+a personal preference for the look of the buffer.
 
 ** User Entities
 The following source code block sets up user entities that are used frequently
