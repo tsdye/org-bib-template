@@ -1,0 +1,990 @@
+#+OPTIONS: toc:3 ':t h:4 ^:{} tags:nil todo:nil
+#+LATEX_CLASS: koma-article
+#+LATEX_CLASS_OPTIONS: [paper=letter,oneside,DIV=8]
+#+LATEX_HEADER: \usepackage[style=verbose,backend=bibtex]{biblatex}
+#+LATEX_HEADER: \addbibresource{local.bib}
+#+STARTUP: entitiespretty
+
+#+TITLE: Guide to Radiocarbon Dating in Hawai`i: An Annotated Bibliography
+#+AUTHOR: Thomas S. Dye
+#+EMAIL: tsd at tsdye dot com
+
+* Introduction
+
+This annotated bibliography was distributed to the attendees of the
+Society for Hawaiian Archaeology's Radiocarbon Dating Workshop, which
+was held at Bishop Museum on January 21, 2014. The bibliography is
+organized topically, with separate sections for the general and
+Hawaiian literature. It contains sources that I've found useful in my
+study of radiocarbon dating and also detailed citations for the
+sources of information used to construct graphics for the workshop.
+The reader should be aware that many of the entries discuss a variety
+of topics, so that their placement in one section or another of the
+bibliography involves some choice.
+
+* Radiocarbon Dating in General
+
+The sources in this section are drawn from the world literature on
+radiocarbon dating. They are mostly standard references that justify
+the procedures used by modern radiocarbon dating programs.
+
+** Overviews
+
+These texts explain the theory, physics, and statistics of radiocarbon
+dating and its use as evidence in historical accounts. During the
+early years of radiocarbon dating, through about 1990, the radiocarbon
+dating community was concerned to teach archaeologists about what goes
+on in a dating laboratory, the nature of the physical processes that
+make radiocarbon dating possible, and how to understand the
+probabilistic nature of the dating evidence. The last 25 years have
+seen more attention given to modeling the relationship of radiocarbon
+dates to the other kinds of historical information available to
+archaeologists. This is the subject of Bayesian calibration.
+
+**** [[cite:polach88:_radioc_datin_liter_first_years][;;Polach]]
+
+There are 80 references to archaeological radiocarbon dating in
+Oceania, two of which are from Hawai`i, in this review of the first 21
+years of the radiocarbon dating literature. It is a reminder of how
+little archaeologists knew about chronology at the time CRM
+archaeology got its start in Hawai`i.
+
+**** [[cite:bowman90:_radioc_datin][;;Bowman]]
+
+This is the best general introduction to radiocarbon dating for
+archaeologists. Written by the Keeper of the Department of Scientific
+Research in the British Museum, it is short at only 62 pages and
+concise. Sample composition and issues of association and context are
+discussed in Chapter 5, Radiocarbon and Archaeology. The book has a
+good description of calibration, but it was written before the Bayesian
+techniques were fully developed and is now a bit outdated.
+
+**** [[cite:taylor87:_radioc_datin][;;Taylor]]
+
+This is a longer, very thorough, treatment written by an archaeologist
+who, early in his career, had the opportunity to intern at the UCLA
+Institute of Geophysics and Planetary Physics. An excellent reference
+book, it is more technical and less accessible than Bowman's book.
+Chapter 5, /Evaluation of Radiocarbon Data/, discusses sample
+composition and issues of association and context.
+
+**** [[cite:buck96:_bayes_approac_inter_archaeol_data][;;Buck]]
+
+This book contains the classic description of the Bayesian approach to
+radiocarbon calibration, set within a rigorous mathematical discussion
+of modeling in archaeology, quantification of uncertainty, and
+statistical modeling. The Bayesian approach to radiocarbon calibration
+is designed to permit the use of various kinds of contextual
+information, such as stratigraphy, to yield age estimates that are
+archaeologically interpretable. Bayesian methods provide a theoretical
+bridge between the results supplied by the dating laboratory and the
+other types of relative and absolute chronological information
+typically collected by the archaeologist in the field and during
+background research into the historical record. Chapter 9,
+/Interpretation of Radiocarbon Results/, presents five case studies to
+illustrate the application of Bayesian methods to practical
+archaeological situations, including routine incorporation of
+stratigraphic information, dating of a multi-phase sequence based on
+artifact classification, and outlier detection, among others.
+
+**** [[cite:bayliss09:_rollin_out_revol][;;Bayliss Revolution]]
+
+A brief history and prospect of how technological advances in
+radiocarbon dating have revolutionized archaeological interpretation.
+The author works for English Heritage, the government agency
+responsible for archaeology in England. English Heritage was quick to
+recognize the potential of routine Bayesian modeling and in 2009 there
+were more than 500 sites in England where ages had been estimated
+using Bayesian methods. Notes that Bayesian techniques have had
+greatest impact on periods of English history where artifact
+chronologies aren't well developed (like Hawai`i), and that the impact
+of the Bayesian technology on interpretation took about 15 years to
+become apparent to the archaeological community.
+
+** Sample Composition
+**** [[cite:stuiver-polach77][;;Stuiver conventional 14C age]]
+
+The definition of "conventional radiocarbon age" as one that
+#+attr_latex: :environment inparaenum :options (i)
+ - uses 5568 as the radiocarbon half-life,
+ - uses National Bureau of Standards oxalic acid to define "zero" age,
+ - uses AD 1950 as the zero point from which to count radiocarbon
+   time, and
+ - corrects the sample to a common \delta{}^{13}C value.
+
+**** [[cite:niu13:_bayes_approac_radioc_calib_curve_estim][;;Niu Bayesian Calibration Curve]]
+
+Outlines the Bayesian methods used to estimate the calibration curves
+used by software such as =Calib=, =OxCal=, and =BCal=.
+
+** Association and Context
+
+The archaeological association problem was first dealt with
+systematically by the Dutch archaeologist, H. T. Waterbolk. A
+comprehensive framework for analyzing association and context is the
+Harris matrix. As radiocarbon dating techniques advanced and it became
+possible to date ever smaller samples, archaeologists learned to pay
+closer attention to association and context.
+
+**** [[cite:waterbolk71:_workin_radioc_dates][;;Waterbolk]]
+
+Waterbolk was one of the first archaeologists to think through the
+problems of archaeological dating with radiocarbon. The following
+quote was his motivation for publishing this article.
+
+#+begin_quote
+C-14 datings can not only provide us with estimates of the absolute
+age of objects or occupation layers, but also, when available in
+sufficient numbers, with initial and terminal datings for cultural
+phases, thus defining their duration.
+#+end_quote
+
+Waterbolk considered it axiomatic that the dated event was always
+older than its archaeological context.
+
+#+begin_quote
+A C-14 sample always has, unless contaminated with younger material,
+a date older than that at which it was buried in the ground and became
+associated with other objects.
+#+end_quote
+
+He noted that the dated event had to be associated with the reference
+event. 
+#+begin_quote
+There is great variation in the degree of certainty with which
+measured C-14 samples are associated with the archaeological material
+they are intended to date.
+#+end_quote
+
+He suggested that archaeologists evaluate the confidence of the
+association between dated event and reference event with a four step
+scale:
+#+attr_latex: :environment inparadesc
+ - full certainty, :: the archaeological object itself furnished he
+                     measured sample;
+ - high probability, :: there is a direct functional relationship
+      between the organic material which is measured and the
+      diagnostic archaeological finds;
+ - probability, :: there is no demonstrable functional relation between
+                  measured sample and archaeological material, but the
+                  quantity of organic material and the size of the
+                  fragments argue in favor of a relationship;
+ - reasonable possibility, :: small, scattered fragments.
+
+Waterbolk recommended that samples collected from "brief test
+excavations" should not be assigned "high probability."
+
+Although it would be about twenty years until Bayesian techniques were
+developed to integrate stratigraphic information into calibration,
+Waterbolk clearly pointed to the desirability of combining the two
+sources of information.
+
+#+begin_quote
+A sounder judgment can be formed of the reliability of a dating if
+one has \dots datings of a series of samples from the same vertical
+profile.
+#+end_quote
+
+**** [[cite:harris89:_princ_archaeol_strat][;;Harris matrix]]
+
+The Harris matrix was developed to facilitate recording the complex
+stratigraphy of urban archaeological sites in Great Britain. It
+defines two types of stratigraphic unit---deposits and
+interfaces---and sets out a protocol for recording their
+characteristics and relationships to one another. Use of the Harris
+matrix solves the problems of association and context.
+
+**** [[cite:pendergast00:_probl_raised_small_charc_sampl_radioc_analy][;;Pendergast Small Samples]]
+
+Development of AMS dating greatly reduced the sizes of charcoal
+samples required for archaeological dating. This short article points
+out potential association and context problems introduced by the
+ability to date small pieces of charcoal.
+
+**** [[cite:dean78:independent_dating][;;Dean Independent Dating]]
+
+A difficult, highly formalized, paper written when behavioral
+archaeology was the rage at the University of Arizona and the author
+was active in the Laboratory of Tree Ring Research there. Dean's work
+with dendrochronology alerted him early to the difficulties of
+archaeological dating.  Distinguishes four meanings of "event" in
+archaeological dating, three of which are most useful:
+#+attr_latex: :environment inparadesc
+  - dated event (E_{d}), :: the event that is actually dated by the
+                   laboratory---in radiocarbon dating, this is
+                   typically the growth of the plant or the death of
+                   the animal that makes up the dating sample;
+  - reference event (E_{r}), :: the potentially datable event that can be
+      related to the event of interest; and
+  - target event (E_{t}), :: the event of archaeological interest.
+
+Develops a terminology to describe relationships among E_{d}, E_{r}, and E_{t}:
+#+attr_latex: :environment inparadesc
+  - disjunction, :: when E_{d} is older than E_{t};
+  - gap, :: when, in a disjunction, E_{d} is older than E_{r};
+  - hiatus, :: when, in a disjunction, E_{r} is older than E_{t}; and
+  - disparity, :: when E_{d} is younger than E_{t}.
+
+** Substantive Contributions
+
+There are many good examples of radiocarbon dating, but /Gathering
+Time/ stands head and shoulders above anything that came before and
+has been done since. The main argument is that the kinds of histories
+that archaeologists can conceive are shaped by the precision with
+which they can measure time.
+
+**** [[cite:whittle11:_gather_time][;;Whittle]]
+
+This two-volume work describes the results of a project to date the
+early Neolithic causewayed enclosures of Southern Britain and Ireland.
+It is the largest application of the Bayesian approach to modeling
+archaeological chronologies ever undertaken. Chapter 2, /Towards/
+/generational time-scales: the quantitative interpretation of
+archaeological chronologies/, written for "Bayesian virgins,"
+describes in detail how the project was able to achieve resolution on
+the order of a human generation from archaeological materials more
+than 5,000 years old. The best example, from Hambledon Hill,
+is described in Chapter 4, /South Wessex/, and should be required
+reading for every archaeologist using radiocarbon dating.
+
+** Calibration Software
+
+Calibration software has been available since the mid 1980s.  Software
+capable of implementing Bayesian models was introduced around 2000 and
+is now widely available.
+
+**** [[cite:stuiver-reimer86][;;Calib]]
+
+One of the first widely available calibration programs, it is
+available on the Internet and as a stand-alone application for the
+Windows platform. =CALIB= does not support Bayesian models and is thus
+somewhat outdated.
+
+**** [[cite:buck99:_bcal_internet_arch][;;BCal]]
+
+=BCal= is an on-line calibration program designed specifically to
+implement Bayesian models. The software follows a step-by-step
+procedure that guides the user through data entry and calibration.
+Informative context-sensitive help is available at each step. Input
+data are stored on the =BCal= server in binary format, which makes
+them somewhat difficult to share.  Also, output is restricted to a
+(useful) subset of the information generated during the calibration
+and might not be sufficient for unusual situations.
+
+**** [[cite:bronk01:_devel_of_radioc_calib_progr_oxcal][;;OxCal]]
+
+=OxCal= is available on the Internet and also as a stand-alone application
+that runs in certain versions of the FireFox web browser. It
+calibrates individual dates like =CALIB=, and also supports Bayesian
+models. =OxCal= is actively developed and supports a wide variety of
+models. 
+
+* Radiocarbon Dating in Hawai`i
+
+Radiocarbon dating has a long history in Hawaiian archaeology, but it
+is only recently that it has begun to address the sample composition
+and association issues in a meaningful way.
+
+** Overviews
+
+Rob Hommon's experience researching and writing /The Ancient Hawaiian
+State/ led him to propose that the Society for Hawaiian Archaeology
+set out best practices for radiocarbon dating. Tim Rieth and Steve
+Athens at International Archaeological Research Institute put together
+a useful programmatic statement, with a focus on sample composition
+issues. 
+
+**** [[cite:rieth13:_sugges_best_pract_applic_radioc][;;Rieth and Athens]]
+
+Sets out "Best Practices" guidelines for acquiring radiocarbon dates.
+Distinguishes the dated event from the target event of archaeological
+interest and recommends that archaeologists develop a "bridging
+argument" that explicitly establishes the chronological relationship
+of the two events. Illustrates with a paleontological example from
+Barbers Point an interpretive error tied to a naive bridging argument.
+Discusses how to select and date wood charcoal, marine shell, bone,
+bulk soil, and ash, and recommends that dates on bulk soil and ash be
+avoided, if possible. Provides an example tabular report of a
+radiocarbon date that does not clearly distinguish the dated event
+from the archaeological target event and reports a date on
+unidentified material. Table 1 gives lifespans for 32 common Hawaiian
+plants as an aid to radiocarbon dating sample selection. Table 2
+summarizes the apparent ages of marine shells from O`ahu, Moloka`i,
+and Hawai`i Island. Reports an apparent age, \Delta{}R, of 54 \pm 20 for petrel
+bones.
+
+** Sample Composition
+
+The suitability of different sample materials was investigated during
+the early years of radiocarbon dating in Hawai`i. Unlike other places
+in the Pacific, Hawaiian archaeologists have made only limited use of
+marine shells for dating and issues surrounding local variations in
+the apparent age of the marine environment haven't been fully worked
+out. The effects of old wood have been amply documented.
+
+**** [[cite:emory69:age_of_sites][;;Emory et al. Age of Sites at South Point]]
+
+Reports the work of Roy Chatters and Roald Fryxell of the
+Radioisotopes and Radiation Laboratory at Washington State University
+and Lars Engstrom of the Radiocarbon Laboratory at Stockholm. They
+dated a wide variety of materials from the H8 site, including
+driftwood, /Cypraea/ shell, sea-urchin spines, fish scales, and fish
+bones. Establishes the potentially great age of driftwood that washes
+ashore. Concludes that sea urchin spines, fish scales, and fish bones
+produce "erratic dates" and are unsuited for radiocarbon dating.
+**** [[cite:dye00:_effec][;;Dye Sample Selection]]
+
+Argues that "old wood" has a demonstrable effect on radiocarbon dates
+from Hawai`i. Compares the age distribution of 22 dates on identified,
+short-lived wood charcoal collected from fire-pits at Bellows Air
+Force Station with 22 dates on unidentified wood charcoal mostly
+collected from non-feature contexts. Shows that differences in the
+distributions are similar to the differences between large samples of
+short-lived and long-lived woods dated in New Zealand. Points to three
+potential sources of "old wood," including driftwood, waterlogged wood
+in alluvial deposits of Puh\amacron{} Stream, and the heartwood of old trees.
+
+**** [[cite:dye94:_appar][;;Dye Marine Shells]]
+
+Dated 8 marine shells of known age from Bishop Museum collections and
+reviewed 11 paired marine shell and wood charcoal dates from the H8
+site and sites at Barbers Point, O`ahu. Identified relatively great
+variation in the apparent ages of Hawaiian marine shells and
+demonstrated that grazing herbivores from limestone coasts have
+apparent ages up to 620 years greater than similar shells from
+volcanic coasts. Recommended that archaeological marine shells for
+dating should be sourced to a particular local environment and that
+the apparent age of shells in that environment should be determined
+for best results.
+
+**** [[cite:petchey09:_datin_ocean][;;Petchey Dating Marine Shells]]
+Dating marine shells requires that the species be identified and the
+dietary and habitat preferences of that species known. Algae grazers
+and deposit-feeders aren't suitable for dating because they can ingest
+carbon from old limestone or a terrestrial source. Filter-feeders,
+typically sessile bivalves, are preferred for dating and will be most
+reliable when the bivalves grew in environments with free water
+exchange with the open ocean, away from limestone exposures and from
+estuaries that carry terrestrial carbon into the ocean.
+
+**** [[cite:weisler09:_late_holoc_hawaii_u][;;Weisler Delta R]]
+
+Using paired U-series and radiocarbon dates on twelve pieces of
+/Pocillopora/ sp. branch coral from various locations on Moloka`i
+Island, establishes that the apparent age of the marine environment of
+southern Moloka`i did not vary spatially in the seventeenth century
+and that it was also consistent over the period AD 700--1800.
+
+** Association and Context
+
+Nowadays, discussions of association and context are carried out in
+the context of Bayesian calibration.
+
+**** [[cite:dye10:_tradit_hawaiian_surfac_archit][;;Dye Surface architecture]]
+
+An attempt to introduce Bayesian calibration to Hawaiian
+archaeologists. Develops and illustrates a simple Bayesian model that
+can be used to estimate the construction date of a surface
+architectural feature. Describes a set of field procedures to support
+the data requirements of the model and recommends they be applied
+generally in Hawai`i. Proposes a dynamic settlement pattern
+hypothesis: "There are two components to the diachronic settlement
+pattern of traditional Hawai`i, with a fixed set of temple structure
+locations surrounded by a more transient set of habitation
+structures."
+
+** Substantive Contributions
+
+The changes brought about by archaeologists paying attention to sample
+composition, association, and context are most easily seen in the
+changing estimates for the age of early sites and estimates for
+Polynesian settlement of Hawai`i. The firewood contents of fire-pits
+can be precisely located in both space and time---they provide a
+unique data set with great potential for interpretation.
+
+*** Early Sites
+
+The three sites thought to represent early settlement are now thought
+to date several hundred years later than the initial estimates.
+
+**** [[cite:dye92:_south_point][;;Dye South Point]]
+
+Uses an ad hoc graphical technique to estimate the duration of time
+represented by individual layers at the H1 and H8 sites. Concludes
+that the duration of Layer II at the H8 site was about 1,000 years,
+from the late seventh century to about AD 1650, and that the duration
+of Layer I at H8 was about 200 years, from AD 1650 to site abandonment
+around AD 1850. Also concludes that Layers III and II at H1 were both
+deposited in the first half of the fifteenth century. Favorably
+compares these results to a cross-dating of the sites based on the
+relative frequencies of one-piece fishhook head types 1A, 1B, and 4.
+
+**** [[cite:kirch07:_recon_hawaiian_cultur_sequen][;;Kirch and McCoy Halawa]]
+
+Reports radiocarbon dates on three pieces of bone and three carbonized
+twigs collected from non-feature contexts at the Halawa Dune Site,
+Moloka`i. Concludes that the site was unlikely to have been settled
+prior to AD 1300, some seven to eight centuries later than initially
+estimated. "Old wood" and problematic procedures at the dating
+laboratory are thought to have contributed to anomalously early age
+estimates.
+ 
+**** [[cite:dye10:_age_o18_site_hawaii][;;Dye and Pantaleo]]
+
+Seven new radiocarbon age determinations indicate that the O18 site
+was established in AD 1040--1219, quite a bit later than previous
+estimates of the seventh, fourth, and eighth centuries AD. Implicates
+the effects of dating "old wood" as one reason for the erroneously old
+age estimates.
+
+*** Polynesian Settlement
+Archaeologists are naturally interested in "firsts." The date
+Polynesians discovered and settled Hawai`i has pride of place as the
+first of the firsts.
+**** [[cite:emory28:_archaeol_nihoa_necker_islan][;;Emory 1928]]
+Before radiocarbon dating, the settlement date was estimated with
+genealogical records, using an average generation length of 25 years. 
+
+**** [[cite:sinoto70:_archaeol_based_asses_of_marques][;;Sinoto 1970]]
+An estimate based on work at South Point and the Marquesas.
+
+**** [[cite:bellwood79:conquest][;;Bellwood 1979]]
+Hawai`i settlement as seen from the context of Oceania and Southeast
+Asia.
+
+**** [[cite:kirch85:_feath_gods_fishh][;;Kirch Feathered Gods]]
+The classic textbook of Hawaiian archaeology. Argues from a
+consideration of "early" sites and comparisons with dates from the
+Eastern Polynesian homeland.
+
+**** [[cite:hunt91:_hawaiian_islan][;;Hunt and Holsen]]
+
+The earliest estimate of Polynesian settlement, based on a
+consideration of a large corpus of radiocarbon dates, few of which
+controlled for sample composition or association and context.
+
+**** [[cite:spriggs93:_late_east_polyn][;;Spriggs and Anderson]]
+
+Chronometric hygiene scrubs away many early dates, yielding a "late"
+chronology. 
+
+**** [[cite:graves95:_polyn_settl_of_hawaiian_archip][;;Graves and Addison]]
+
+Another plea for the usefulness of the early dates, this time based on
+the idea that settlement was a multi-stage process.
+
+**** [[cite:athens97:_historical_ecology][;;Athens 1997]]
+
+Introduces paleoenvironmental data into the discussion of Polynesian
+settlement. These date point to a substantially later settlement than
+most Hawaiian archaeologists at the time were prepared to entertain.
+
+**** [[cite:kirch00:_road_winds][;;Kirch Road of Winds]]
+Kirch's "Bellwood book" begins to express some doubt about the early
+Hawaiian sites, but doesn't yet fully appreciate the
+paleoenvironmental data reported by [[cite:athens97:_historical_ecology][;;Athens]].
+
+**** [[cite:wilmshurst11:_high_east_polyn][;;Wilmshurst et al.]]
+
+Radical chronometric hygiene yields really late estimates for
+settlement of East Polynesia, including Hawai`i. Contrast the
+settlement estimate derived after chronometric hygiene with the
+unhygienic estimate proposed by [[cite:hunt91:_hawaiian_islan][;;Hunt and Holsen]], which is about a
+millennium older.
+
+**** [[cite:kirch11:_when_polyn_hawaii][;;Kirch 2011]]
+
+Reviews and summarizes the history of ideas relating to the timing of
+the settlement of Hawai`i; brings together the latest information,
+including the chronology of settlement for the Central East Polynesia
+region, paleoenvironmental proxy records from O`ahu and Kaua`i, dates
+obtained from bones of the Polynesian-introduced rat, and the
+re-dating of Site O18.
+
+**** [[cite:rieth11:_centur_polyn_colon_hawaii_islan][;;Rieth et al. 13th Century Colonization]]
+
+Compiles 926 radiocarbon dates from Hawai`i Island and classifies them
+according to sample material and the precision reported by the dating
+laboratory.  Table 1 provides a list of short-lived and long-lived
+taxa commonly used as radiocarbon dating samples in Hawai`i.
+
+**** [[cite:dye11:_model_age_estim_polyn_colon_hawaii][;;Dye Settlement]]
+
+A model-based Bayesian calibration using radiocarbon data from
+paleoenvironmental cores and materials introduced to the islands by
+Polynesian colonists estimates that the islands were likely colonized
+sometime late in the first millennium AD. Two calibrations, one using
+radiocarbon dates on floral materials and the other using radiocarbon
+dates on floral and faunal materials, indicate that archaeological
+materials yield relatively imprecise estimates of the colonization
+event with 95 percent highest posterior density regions 3–5 centuries
+long.
+
+**** [[cite:athens14:_paleoen_archaeol_model_based_age][;;Athens et al. American Antiquity]]
+
+Augments [[cite:dye11:_model_age_estim_polyn_colon_hawaii][;;Dye AO]], with additional data from the pre-colonization and
+post-colonization periods. Derives a more precise estimate of the
+settlement date in the eleventh century AD. Supports this estimate
+with a similar age estimate derived from an age-depth model applied to
+a paleoenvironmental core from Ordy Pond on O`ahu.
+
+*** Firewood Use
+
+**** [[cite:dye13:_chang_waiman_plain][;;Dye and Sholin]]
+Wood charcoal identifications from 35 dated traditional Hawaiian
+fire-pits on the Waim\amacron{}nalo Plain are analyzed for evidence of change
+over time and difference across space. Plant taxa identified in the
+firewood are classified according to habit, origin, and elevational
+distribution. Early in traditional Hawaiian times, firewood was
+commonly brought to the plain from inland forests and fires were made
+primarily with native plants. Later, firewood was more likely to be
+collected locally, and it typically included both
+Polynesian-introduced and native plants. This change in behavior
+appears to have taken place in the fifteenth century. It was likely
+associated with a vegetation change in which the native lowland
+forest was replaced with a variety of useful plants, especially near
+Puh\amacron{} Stream.
+
+* Quotes about Radiocarbon Revolution                              :noexport:
+
+Alex Bayliss, an archaeologist and dating expert at English Heritage,
+said: "The dates were not what we expected when we began this project
+but prehistorians are just going to have to get their heads around it,
+a lot of what we have been taught in the past is complete bollocks."
+Bayliss worked on the new dating system with Professor Alasdair
+Whittle of Cardiff University and other experts, combining hundreds of
+thousands of scraps of dating evidence, obtained from the last century
+of excavations, on Cardiff's computers. They matched notoriously
+imprecise carbon-14 dates from organic remains – which can have a
+margin of error of centuries – with all the other evidence from
+archaeological finds, narrowing the dates for sites from centuries to
+decades. "The old techniques gave us such imprecise results that it's
+like taking the Napoleonic wars, the first world war, the second world
+war and the computer revolution and insisting that they're all
+contemporary. "Now we can narrow that down dramatically. You take a
+granny with a good long life living near Windmill Hill in Avebury, she
+could have seen her family start the enclosure as a child, see it fall
+out of fashion and them turn to building barrows, and then return to
+do more work on the enclosure, all in her lifetime."
+
+* Talk outline                                                     :noexport:
+  :PROPERTIES:
+  :EXPORT_FILE_NAME: talk-outline
+  :EXPORT_OPTIONS: toc:nil tags:nil
+  :END:
+ 1. Thanks
+    1. Holly and Mara from the SHA Board
+    2. Others who helped with the pizza and beer
+ 2. Overview
+    1. Glad to see such interest in radiocarbon dating
+    2. Fun putting together the slide show
+    3. If you have questions, raise a hand or note the slide number
+ 3. Radiocarbon revolution: Three phases
+    1. Alex Bayliss, p. 3
+    2. Alasdair Whittle, Gathering Time, p. 6
+ 4. Thinking Clearly
+    1. Jeff Dean, p. 5
+    2. H. T. Waterbolk, p. 4
+    3. Bowman, p. 2, best overview
+    4. Taylor, p. 2, most thorough overview
+ 5. Thinking Clearly diagram
+    1. E_{t} = Target event
+    2. E_{r} = Reference event
+    3. E_{d} = Dated event
+ 6. Example 1 is fictitious
+ 7. Example 2 is also fictitious
+ 8. Sample Composition
+    1. Rieth and Athens, /Hawaiian Archaeology/, p. 7
+    2. Dye (2000) /Radiocarbon/, p. 8
+ 9. Sample Composition, Marine Shell
+    1. Rieth and Athens, /Hawaiian Archaeology/, p. 7
+    2. Dye (1994) /Radiocarbon/, p. 8
+ 10. Sample Composition, Marine Shell
+     1. Petchey, p. 9
+ 11. Association and Context
+     1. Harris, p. 5, for context and matrix
+     2. Waterbolk, p. 4, for association
+     3. Taylor, p. 2 has a good overview
+ 12. Polynesian Settlement
+     1. Dye (2011), p. 12
+     2. Athens, Rieth and Dye (2014), p. 13
+ 13. Polynesian Settlement
+     1. References on p. 10--12
+     2. Early sites, p. 10
+ 14. Dynamic Settlement Pattern
+     1. Roger Green's idea
+     2. Surface Architecture, p. 9
+ 15. Dynamic Settlement Pattern graph
+     1. Sample composition and association from older contexts
+ 16. Dynamic Settlement Pattern
+     1. Requires Bayesian calibration software
+     2. BCal Buck, Christen and James, p. 6
+     3. OxCal, Ramsey p. 7
+     4. Calib won't do, Reimer, p. 6
+ 17. Firewood Choice
+     1. Dye and Sholin, p. 13
+     2. Unique circumstances---an event, precisely located in space
+        and time.
+* Org mode setup                                                   :noexport:
+  :PROPERTIES:
+  :EXPORT_TITLE: Annotated Bibliography Template
+  :EXPORT_OPTIONS: tags:nil todo:nil
+  :END:
+** Introduction
+This file describes a template for creating an annotated bibliography
+document using Org mode. The document is intended to be output as a
+pdf file and distributed as printed hard copy.
+
+The goal was to design a template that makes an annotated bibiliography
+  - easy to build,
+  - good looking, and
+  - organized by topical sections and subsections.
+
+The template relies on a working LaTeX installation that includes
+several common LaTeX packages, and a database manager for Emacs (table
+[[software-requirements]]).
+
+#+name: software-requirements
+#+caption[Open source software required by the template]: *Open source software required by the template*
+| Software       | Distribution      | Installation                                |
+|----------------+-------------------+---------------------------------------------|
+| LaTeX          | [[http://www.tug.org/texlive][TeX Live (Linux)]]  | See distribution instructions               |
+|                | [[http://www.tug.org/mactex/][MacTeX (Mac OS X)]] | See distribution instructions               |
+|                | [[http://www.tug.org/protext/][proTeXt (Windows)]] | See distribution instructions               |
+| LaTeX packages | [[http://www.ctan.org/pkg/biblatex][biblatex]]          | Typically included with LaTeX distributions |
+|                | [[http://www.ctan.org/pkg/koma-script][scrartcl]]          | Typically included with LaTeX distributions |
+|                | [[http://www.ctan.org/pkg/paralist][paralist]]          | Typically included with LaTeX distributions |
+|                | [[http://ctan.org/tex-archive/macros/latex/contrib/microtype][microtype]]         | Typically included with LaTeX distributions |
+|                | [[http://www.ctan.org/pkg/tex-gyre][tex-gyre]]          | Typically included with LaTeX distributions |
+| [[http://joostkremers.github.io/ebib/][Ebib]]           | [[http://melpa.milkbox.net/#/][MELPA]]             | Path set up by ELPA                         |
+
+In the Org mode file, the first three heading levels are reserved for
+topics and sub-topics. Bibliographic entries are placed on fourth
+level headings. The following example shows two fourth level
+headlines; the first fourth level heading shows what the buffer looks
+like when Org mode is using =descriptive links= and the second is when
+Org mode is using =literal links=.
+
+#+name: first-eg
+#+begin_example
+,* Topic
+,** Sub-topic
+,*** Sub-sub-topic
+,**** ;;Bayliss Revolution
+,**** [[cite:bayliss09:_rollin_out_revol][;;Bayliss Revolution]]
+#+end_example
+
+** Workflow
+
+I like to organize my annotated bibliographies the same way I've
+learned to organize projects in Org mode; I make an outline of topics
+and subtopics using first, second, and third level headings as
+necessary. Then I write whatever comes to mind for each of the
+headings. From then on, I insert bibliographic entries, annotate them,
+and revise topic and sub-topic text accordingly.
+
+Bibliographic entries are inserted as fourth level headings,
+regardless of the heading level immediately preceding them.  Thus, the
+following example will work just as well as the [[first-eg][earlier example]]:
+
+#+name: first-eg
+#+begin_example
+,* Topic
+,**** ;;Bayliss Revolution
+#+end_example
+
+Over the years, my colleagues and I have created a master bibliography
+with more than 4,000 entries. This is a bit unwieldy to distribute, so
+I like to make a local bibliography that only contains the entries
+that appear in the annotated bibliography and that can be easily
+distributed. One way to do this, and the way that I prefer, is to open
+the master database and a local database in [[http://joostkremers.github.io/ebib/][Ebib]] and then copy entries
+from master to local as the annotated bibliography is being written.
+This is simply achieved by [[http://joostkremers.github.io/ebib/ebib-manual.html#exporting-entries][exporting entries from one Ebib database to
+another]].
+
+Adding a bibliographic entry involves creating the fourth level
+headline and then pressing =C-c C-b= to insert the citation. [[http://joostkremers.github.io/ebib/ebib-manual.html][Ebib]] will
+prompt for the bibliographic key, and then for three strings---one for
+the post-entry text, another for the pre-entry text, and finally one for
+the entry's description in the Org mode buffer. Typically, for an
+annotated bibliography the first two strings are empty. 
+
+Once that is done you should have a cite link as a fourth level
+headline, leaving you ready to annotate.
+
+** Options and Keywords
+
+The following example of options and keywords is one that I used
+recently for an annotated bibliography of radiocarbon dating in
+Hawai`i. The =#+OPTIONS:= line lists options in order of descending
+importance. The option =h:4= ensures that headings include LaTeX
+paragraphs, which are used to typeset the bibliographic entries. The
+option =toc:3= puts all headings above the bibliographic entries into
+the table of contents. Depending on how much detail you want in the
+table of contents, this could sensibly be set to =toc:2= or =toc:1=.
+Or, for a simple bibliography, even =toc:nil=.  The options =tags:nil=
+and =todo:nil= ensure that none of the Org mode metadata attached to
+headings makes it into the exported document. The last two options are
+useful for LaTeX export; I like =^:{}= because my BibTeX keys are
+configured to use underscores and I don't want parts of the keys
+rendered in the Org mode buffer as underscores.
+
+#+name: ante-matter
+#+begin_example
+,#+OPTIONS: h:4 toc:3 tags:nil todo:nil ':t ^:{}
+,#+LATEX_CLASS: koma-article
+,#+LATEX_CLASS_OPTIONS: [paper=letter,oneside,DIV=8]
+,#+LATEX_HEADER: \usepackage[style=verbose,backend=bibtex]{biblatex}
+,#+LATEX_HEADER: \addbibresource{local.bib}
+,#+STARTUP: entitiespretty
+#+end_example
+
+The =#+LATEX_CLASS:= keyword needs to match the class name defined
+[[Koma Article][below]].
+
+The =#+LATEX_CLASS_OPTIONS:= keyword can take any option described in
+the [[http://www.ctan.org/pkg/koma-script][Koma Script]] manual. The options shown in [[ante-matter][the example]]: set the paper
+size to letter paper (Europeans might want to use =a4= here, or simply
+get rid of the option to use the default, which is =a4=); formats for
+single-sided output, which is good for a bibliography that will be
+bound with a stable at the top left corner; and uses =DIV= to
+calculate the type area of the page.  Longer and more complex
+bibliographies that will be distributed with a binding might want to
+use the =twoside= option. The integer value of the =DIV= option
+determines the size of the type area; larger integers increase the
+size of the type area.
+
+The two =#+LATEX_HEADER:= keywords are included here, rather than in
+the definition of [[Koma%20Article][koma-article]], because they are likely to change from
+one annotated bibliography to the next.  In general, the =biblatex=
+package will always use the =verbose= style, but the backend will
+depend on which of BibTeX or Biber you are accustomed to using.  The
+second =#+LATEX_HEADER= specifies the name of the bibliographic
+database that holds entries for the works that appear in the annotated
+bibliography. 
+
+The last line, which starts up Org mode with =entitiespretty= is just
+a person preference for the look of the buffer.
+
+** User Entities
+The following source code block sets up user entities that are used frequently
+in my work. I use the various =.*macron= commands to typeset Hawaiian
+language words with what is known in Hawaiian as a /kahak\omacron{}/.
+
+The =space= entity is useful following a period that doesn't end a
+sentence. LaTeX sets a space slightly longer than an inter-word space
+following a sentence ending period. The =space= entity lets LaTeX know
+to set an inter-word space.
+
+#+name: user-entities
+#+begin_src emacs-lisp
+  (setq org-entities-user nil)
+  (add-to-list 'org-entities-user '("space" "\\ " nil " " " " " " "–"))
+  (add-to-list 'org-entities-user '("amacron" "\\={a}" nil "&#0257" "a" "a" "ā"))
+  (add-to-list 'org-entities-user '("emacron" "\\={e}" nil "&#0275" "e" "e" "ē"))
+  (add-to-list 'org-entities-user '("imacron" "\\={\\i}" nil "&#0299" "i" "i" "ī"))
+  (add-to-list 'org-entities-user '("omacron" "\\={o}" nil "&#0333" "o" "o" "ō"))
+  (add-to-list 'org-entities-user '("umacron" "\\={u}" nil "&#0363" "u" "u" "ū"))
+  (add-to-list 'org-entities-user '("Amacron" "\\={A}" nil "&#0256" "A" "A" "Ā"))
+  (add-to-list 'org-entities-user '("Emacron" "\\={E}" nil "&#0274" "E" "E" "Ē"))
+  (add-to-list 'org-entities-user '("Imacron" "\\={I}" nil "&#0298" "I" "I" "Ī"))
+  (add-to-list 'org-entities-user '("Omacron" "\\={O}" nil "&#0332" "O" "O" "Ō"))
+  (add-to-list 'org-entities-user '("Umacron" "\\={U}" nil "&#0362" "U" "U" "Ū"))
+#+end_src
+** LaTeX Process
+The Org mode variable =org-latex-pdf-process= holds a list of strings,
+each of which is run as a shell command. Typically, several commands
+are needed to process a LaTeX document to produce pdf output. The
+following two source code blocks use a straightforward approach that
+should work in most cases. The source code block named
+[[set-pdf-process-bibtex][set-pdf-process-bibtex]] uses [[http://www.bibtex.org/Using/][BibTeX]] to process the bibliography. BibTeX
+has been a standard for many years in the LaTeX world. The source code
+block named [[set-pdf-process-biber][set-pdf-process-biber]] uses a newer bibliography processor
+named [[http://biblatex-biber.sourceforge.net/][Biber]], which is designed to work with [[http://www.ctan.org/pkg/biblatex][BibLaTeX]].  The choice of
+which one to use must be reflected in the =usepackage= command for
+BibLaTeX at the top of this file; the optional command =backend= takes
+either =bibtex= or =biber= as its value.
+
+At a practical level, perhaps the main difference between Biber and
+BibTeX is how they handle special characters. The bibliographic
+database for BibTeX uses LaTeX commands for special characters while
+the database for Biber uses UTF-8 characters.
+
+#+name: set-pdf-process-bibtex
+#+header: :results silent
+#+begin_src emacs-lisp
+  (setq org-latex-pdf-process
+        '("pdflatex -interaction nonstopmode -output-directory %o %f"
+          "bibtex %b"
+          "pdflatex -interaction nonstopmode -output-directory %o %f"
+          "pdflatex -interaction nonstopmode -output-directory %o %f"))
+#+end_src
+
+#+name: set-pdf-process-biber
+#+header: :results silent
+#+begin_src emacs-lisp
+  (setq org-latex-pdf-process
+        '("pdflatex -interaction nonstopmode -output-directory %o %f"
+          "biber %b"
+          "pdflatex -interaction nonstopmode -output-directory %o %f"
+          "pdflatex -interaction nonstopmode -output-directory %o %f"))
+#+end_src
+
+** Cite Link
+There are many ways to manage citations in Org mode. My preference is
+to manage the bibliography database with [[http://joostkremers.github.io/ebib/][Ebib: a BibTeX database
+manager for Emacs]] and insert citations using a custom Org mode link. I
+find the work flow convenient and the look of the Org mode buffer
+"good enough."
+
+The source code block named [[ebib-setup][ebib-setup]] defines a cite command that
+[[http://joostkremers.github.io/ebib/][Ebib]] will use to insert citations in an Org mode buffer. It inserts
+the BibTeX key as the path part of the link and then offers the user
+three prompts to enter strings separated by semi-colons as the
+description part of the link. The first of these typically holds a
+page number, the second holds a string that appears before the in-text
+citation (typically, something like "e.g.,"), and the third is the
+description of the citation visible in the Org mode buffer.
+
+The source code block named [[define-biblatex-cite-link][define-biblatex-cite-link]] defines an Org
+mode link type that parses the link inserted by [[http://joostkremers.github.io/ebib/][Ebib]] and outputs a
+correctly formatted LaTeX citation. In theory, it is possible also to
+export correctly formatted citations to other backends, but the link
+type defined here doesn't do that. The html export simply sandwiches
+the BibTeX key between =<cite>= tags and is included here as a
+placeholder for future development.
+
+#+name: ebib-setup
+#+begin_src emacs-lisp
+  (setq ebib-citation-commands
+        (quote ((any (("cite" "\\cite%<[%A]%>{%K}")))
+                (org-mode (("cite" "[[cite:%K][%A;%A;%A]]"))))))
+#+end_src
+
+#+name: define-biblatex-cite-link
+#+begin_src emacs-lisp :results silent
+  (org-add-link-type 
+   "cite" 'ebib
+   (lambda (path desc format)
+     (cond
+      ((eq format 'html)
+       (format "(<cite>%s</cite>)" path))
+      ((eq format 'latex)
+       (if (or (not desc) (equal 0 (search "cite:" desc)))
+           (format "\\cite{%s}" path)
+         (format "\\cite[%s][%s]{%s}"
+                 (cadr (split-string desc ";"))
+                 (car (split-string desc ";"))  path))))))
+#+end_src
+
+** Koma Article
+The following two source code blocks set up a LaTeX class named
+=koma-article= that is referenced near the top of the file. The
+=koma-article= class is based on the [[http://www.ctan.org/pkg/koma-script][Koma script]] article class
+=scrartcl=, which uses a sans-serif font for headings and a serif font
+for body text.
+
+The =koma-article= class uses fonts from the [[http://www.gust.org.pl/projects/e-foundry/tex-gyre/][TeX Gyre collection of
+fonts]]. As explained in [[http://www.gust.org.pl/projects/e-foundry/tex-gyre/tb87hagen-gyre.pdf][The New Font Project: TeX Gyre]], a goal of the
+project was to produce good quality fonts with diacritical characters
+sufficient to cover all European languages as well as Vietnamese and
+Navajo. 
+
+The source code block named [[koma-article-times][koma-article-times]] is based on the Times
+Roman font. The serif Termes font is a replacement for Times Roman,
+the sans-serif Heros font is a replacement for Helvetica, and the
+typewriter Cursor font is a replacement for Courier. The source code
+block named [[koma-article-palatino][koma-article-palatino]] is based on the beautiful Palatino
+font designed by Hermann Zapf. The Pagella font is the TeX Gyre
+replacement for Palatino. Typographers often recommend that
+linespacing be increased slightly with Palatino, and this has been
+achieved with the addition of the =linespacing= command.
+
+The Tex Gyre fonts benefit from the [[http://ctan.org/tex-archive/macros/latex/contrib/microtype][microtype package]], which provides
+"subliminal refinements towards typographical perfection," including
+"character protrusion and font expansion, furthermore the adjustment
+of inter-word spacing and additional kerning, as well as hyphenatable
+letter spacing (tracking) and the possibility to disable all or
+selected ligatures."
+
+In addition, the [[http://www.ctan.org/tex-archive/macros/latex/contrib/paralist/][paralist package]] is used for its compact versions of
+the LaTeX list environments.
+
+Finally, the =newcommand= is provided merely as an illustration of one
+way to move LaTeX declarations out of the Org file header. This one is
+useful in my work as an archaeologist and over the years it has crept
+into my BibTeX database. It shouldn't interfere with your work, but
+you might want to remove it or replace it with LaTeX commands that you
+do frequently use.
+
+#+name: koma-article-times
+#+header: :results silent
+#+begin_src emacs-lisp
+   (require 'ox-latex)
+   (add-to-list 'org-latex-classes
+                '("koma-article"
+                  "\\documentclass{scrartcl}
+                   \\usepackage{microtype}
+                   \\usepackage{tgtermes}
+                   \\usepackage[scale=.9]{tgheros}
+                   \\usepackage{tgcursor}
+                   \\usepackage{paralist}
+                   \\newcommand{\\rc}{$^{14}C$}"
+                  ("\\section{%s}" . "\\section*{%s}")
+                  ("\\subsection{%s}" . "\\subsection*{%s}")
+                  ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                  ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                  ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+#+end_src
+
+#+name: koma-article-palatino
+#+header: :results silent
+#+begin_src emacs-lisp
+   (require 'ox-latex)
+   (add-to-list 'org-latex-classes
+                '("koma-article"
+                  "\\documentclass{scrartcl}
+                   \\usepackage{microtype}
+                   \\usepackage{tgpagella}
+                   \\linespacing{1.05}
+                   \\usepackage[scale=.9]{tgheros}
+                   \\usepackage{tgcursor}
+                   \\usepackage{paralist}
+                   \\newcommand{\\rc}{$^{14}C$}"
+                  ("\\section{%s}" . "\\section*{%s}")
+                  ("\\subsection{%s}" . "\\subsection*{%s}")
+                  ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                  ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                  ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+#+end_src
+
+* Local variables                                                  :noexport:
+
+The local variables call the source code blocks defined earlier to set
+up the export environment.
+
+The first call creates an alias for the =org-sbe= function, so that
+the old name for this function, =sbe=, will also be recognized.
+
+The second call selects Times New Roman as the serif font.
+Alternately, this could be replaced by a call to
+"koma-article-palatino".
+
+The third call sets up user entities.
+
+The fourth call sets up the Org mode pdf process to use BibTeX. If you
+want to use Biber, instead, you should call "set-pdf-process-biber".
+
+The fifth and sixth calls set up ebib to insert links into the Org
+mode buffer and instruct Org mode how to use those links to create
+LaTeX citations.
+
+# Local Variables: 
+# eval: (and (fboundp 'org-sbe) (not (fboundp 'sbe)) (fset 'sbe 'org-sbe))
+# eval: (org-sbe "koma-article-times")
+# eval: (org-sbe "user-entities")
+# eval: (org-sbe "set-pdf-process-bibtex")
+# eval: (org-sbe "ebib-setup")
+# eval: (org-sbe "define-biblatex-cite-link")
+# End:
